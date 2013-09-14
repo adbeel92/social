@@ -1,0 +1,10 @@
+@import "bootstrap";
+@import 'icheck/minimal/blue';
+
+.row-fluid-group{
+	padding: 5px 0px;
+}
+
+input[type="submit"][disabled]{
+	background-color: transparent;
+}

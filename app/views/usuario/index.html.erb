@@ -1,0 +1,6 @@
+<% unless current_usuario.nil? %>
+	<p><%= current_usuario.nombre %> <%= current_usuario.apellido %> | <%= current_usuario.email %></p>
+	<%= link_to "Logout", destroy_usuario_session_path, :method => :delete %>
+<% else %>
+	<%= link_to "Login", new_usuario_session_path %>
+<% end %>
